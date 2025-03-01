@@ -1,0 +1,227 @@
+* {
+margin: 0;
+padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+box-sizing: border-box;
+}
+html, body
+{
+    width: 100%;
+    height:  100%;
+}
+#main
+{
+    width: 100%;
+    height: 100vh;
+}
+.top{
+    width: 100%;
+    height: 448px;
+    background-image: url("images/image9.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.overlay
+{
+color: rgb(220, 218, 216);
+}
+.top .overlay 
+{
+position: relative;
+width: 100%;
+min-height: inherit;
+color: rgb(255, 255, 255);
+}
+.text
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 110%;
+    padding: 10%;
+   
+}
+.text h1
+{
+  font-weight: 600;
+  font-size: 4vw;
+}
+.text .image
+{
+ background-image: url("images/image5.jpg");
+ background-size: cover;
+ background-position: center;
+ width: 230px;
+ height: 280px;  
+ margin: -5%;
+}
+.atext
+{
+ display: flex;
+ width: 25%;
+ align-items: center;
+ justify-content: space-between;
+}
+.atext
+{
+    font-size: 20px;
+}
+.bottom
+{
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+}
+.b1 
+{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(images/image11.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.b1 h1
+{
+ text-align: center;
+ line-height: 30vh;
+ padding: 30px;
+ color: rgb(247, 249, 250);
+}
+.b1 p
+{
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin-top: -100px;
+}
+.b2
+{
+   display: flex;
+   width: 30%; 
+   min-height: inherit;
+   flex-direction: column;
+   color: aliceblue;
+}
+.b2 .up
+{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(images/image13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 h1
+{
+    text-align: center;
+    color: antiquewhite;
+    line-height: 80px;
+}
+.b2 p
+{
+    text-align: center;
+    color: aliceblue;
+    margin-top: -15px;
+}
+.b2 .down
+{
+    width: 100%;
+    min-height: 30vh;
+    background-image: url(images/image6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b3
+{
+  width: 40%;
+  min-height: inherit;
+  background-image: url(images/image7.jpg);
+  background-size: cover;
+  background-position: center;
+ }
+ .b3 p
+ {
+    text-align: left;
+    padding: 5px;
+    justify-content: right;
+    position: relative;
+    margin-inline-start: 40px;
+    font-size: 20px;
+    line-height: 50px;
+ }
+
+ @media(max-width: 700px) 
+ {
+    .atext
+    {
+        flex-direction: column;
+    }
+    .b3 .overlay
+    {
+        width: 100%;
+        margin-left: initial;
+    }
+ }
+
+ @media(max-width: 500px)
+ {
+    .text
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1
+    {
+        font-size: 5vh;
+    }
+    .text .image
+    {
+        height:200px;
+        width: 140px;
+        margin-top: 20px;
+
+    }
+    .atext
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .atext p{
+        margin-top: 17px;
+    }
+    .icons
+    {
+        margin-top: 10px;
+    }
+ 
+    .bottom
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1
+    {
+        width: 100%;
+
+    }
+    .b2
+    {
+        width: 100%;
+    }
+    .b2 .up
+    {
+        padding: 3vh;
+        min-height: 40vh;
+    }
+    .b2 .down
+    {
+        padding: 3vh;
+        min-height: 40vh;
+    }
+    .b3
+    {
+        width: 100%;
+        background-position: left;
+    }
+    
+}
